@@ -1,0 +1,6 @@
+#ifndef SENECA_BARBARIAN_H__
+#define SENECA_BARBARIAN_H__
+
+//CODE HERE
+
+#endif //BARBARIAN_H
