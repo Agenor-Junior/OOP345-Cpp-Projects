@@ -1,5 +1,5 @@
-#ifndef SENECA_TEAM_H_
-#define SENECA_TEAM_H_
+#ifndef SENECA_TEAM_H
+#define SENECA_TEAM_H
 
 //CODE HERE
 

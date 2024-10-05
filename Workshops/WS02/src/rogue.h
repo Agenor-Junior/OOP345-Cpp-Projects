@@ -1,5 +1,5 @@
-#ifndef SENECA_ROGUE_H__
-#define SENECA_ROGUE_H__
+#ifndef SENECA_ROGUE_H
+#define SENECA_ROGUE_H
 
 //CODE HERE
 

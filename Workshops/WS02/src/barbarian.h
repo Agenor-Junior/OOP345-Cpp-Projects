@@ -1,6 +1,7 @@
-#ifndef SENECA_BARBARIAN_H__
-#define SENECA_BARBARIAN_H__
+#ifndef SENECA_BARBARIAN_H
+#define SENECA_BARBARIAN_H
 
-//CODE HERE
+// Conteúdo do arquivo barbarian.h
 
-#endif //BARBARIAN_H
+#endif // SENECA_BARBARIAN_H
+

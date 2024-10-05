@@ -1,5 +1,5 @@
-#ifndef SENECA_GUILD_H__
-#define SENECA_GUILD_H__
+#ifndef SENECA_GUILD_H
+#define SENECA_GUILD_H
 
 //CODE HERE
 

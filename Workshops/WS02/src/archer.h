@@ -1,6 +1,6 @@
-#ifndef SENECA_ARCHER_H__
-#define SENECA_ARCHER_H__
+#ifndef SENECA_ARCHER_H
+#define SENECA_ARCHER_H
 
-//CODE HERE
+//CODE HERE..
 
 #endif //ARCHER_H
