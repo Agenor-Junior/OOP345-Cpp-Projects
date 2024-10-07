@@ -1,7 +1,7 @@
 #ifndef SENECA_BARBARIAN_H
 #define SENECA_BARBARIAN_H
 
-// Code here
+// Code here!
 
 #endif // SENECA_BARBARIAN_H
 
