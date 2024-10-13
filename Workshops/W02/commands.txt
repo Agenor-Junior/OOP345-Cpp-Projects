@@ -1,1 +1,0 @@
-g++ -Wall -std=c++17 -g -o ws abilities.h archer.h barbarian.h character.h characterTpl.h guild.h health.h rogue.h team.h tester_1.cpp

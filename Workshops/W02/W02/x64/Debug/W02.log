@@ -1,9 +1,0 @@
-﻿  guild.cpp
-C:\Users\Agenor\Documents\ProjetosGithub\Workshops\W02\guild.h(19,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  team.cpp
-C:\Users\Agenor\Documents\ProjetosGithub\Workshops\W02\team.h(19,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  tester_1.cpp
-C:\Users\Agenor\Documents\ProjetosGithub\Workshops\W02\team.h(19,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Agenor\Documents\ProjetosGithub\Workshops\W02\guild.h(19,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Agenor\Documents\ProjetosGithub\Workshops\W02\rogue.h(1,1): error C1016: #ifndef expected an identifier
-  Generating Code...
