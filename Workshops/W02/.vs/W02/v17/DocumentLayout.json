@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\team.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:team.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\team.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:team.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\rogue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:rogue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\health.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:health.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\guild.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:guild.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\guild.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:guild.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\characterTpl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:characterTpl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\barbarian.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -13,34 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\archer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:archer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\characterTpl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:characterTpl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\health.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:health.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\abilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:abilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\guild.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:guild.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\weapons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:weapons.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\team.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|solutionrelative:team.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D98F218-72D5-430E-A983-2095794F3EF1}|W02.vcxproj|C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\tester_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -54,134 +54,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "weapons.h",
-              "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\weapons.h",
-              "RelativeDocumentMoniker": "weapons.h",
-              "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\weapons.h",
-              "RelativeToolTip": "weapons.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T16:32:50.19Z",
+              "DocumentIndex": 0,
+              "Title": "team.cpp",
+              "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\team.cpp",
+              "RelativeDocumentMoniker": "team.cpp",
+              "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\team.cpp",
+              "RelativeToolTip": "team.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-13T18:19:01.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "guild.cpp",
+              "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\guild.cpp",
+              "RelativeDocumentMoniker": "guild.cpp",
+              "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\guild.cpp",
+              "RelativeToolTip": "guild.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-13T18:17:19.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "health.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\health.h",
               "RelativeDocumentMoniker": "health.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\health.h",
               "RelativeToolTip": "health.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAYwEYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:32:44.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "abilities.h",
-              "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\abilities.h",
-              "RelativeDocumentMoniker": "abilities.h",
-              "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\abilities.h",
-              "RelativeToolTip": "abilities.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-11T16:24:17.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "character.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\character.h",
               "RelativeDocumentMoniker": "character.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\character.h",
               "RelativeToolTip": "character.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:29:02.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "guild.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\guild.h",
               "RelativeDocumentMoniker": "guild.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\guild.h",
               "RelativeToolTip": "guild.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:28:27.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "team.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\team.h",
               "RelativeDocumentMoniker": "team.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\team.h",
               "RelativeToolTip": "team.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAYwG8AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:28:08.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "rogue.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\rogue.h",
               "RelativeDocumentMoniker": "rogue.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\rogue.h",
               "RelativeToolTip": "rogue.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:27:47.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "archer.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\archer.h",
               "RelativeDocumentMoniker": "archer.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\archer.h",
               "RelativeToolTip": "archer.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:27:16.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "barbarian.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\barbarian.h",
               "RelativeDocumentMoniker": "barbarian.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\barbarian.h",
               "RelativeToolTip": "barbarian.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:26:53.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "characterTpl.h",
               "DocumentMoniker": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\characterTpl.h",
               "RelativeDocumentMoniker": "characterTpl.h",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\characterTpl.h",
               "RelativeToolTip": "characterTpl.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-11T16:25:04.96Z",
               "EditorCaption": ""
@@ -194,10 +194,9 @@
               "RelativeDocumentMoniker": "tester_1.cpp",
               "ToolTip": "C:\\Users\\Agenor\\Documents\\ProjetosGithub\\Workshops\\W02\\tester_1.cpp",
               "RelativeToolTip": "tester_1.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAFAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAAE4AAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-11T14:02:28.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T14:02:28.812Z"
             }
           ]
         }

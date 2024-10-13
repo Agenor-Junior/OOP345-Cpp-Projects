@@ -2,102 +2,109 @@
 #define SENECA_TEAM_H
 
 #include "character.h"
-#include <vector>
-#include <iostream>
-#include <algorithm>
+#include <string>
 
 namespace seneca {
 
     class Team {
-        std::vector<Character*> members;
-        std::string name;
+        size_t m_size = 0;
+        size_t m_capacity = 0;
+        Character** m_team;
+
+        std::string m_name;
+
+        int findMember(const std::string& c) const {
+            for (size_t i = 0; i < m_size; ++i) {
+                if (m_team[i]->getName() == c) {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
     public:
-        Team(const char* name = "No team") : name(name) {}
+        Team()
+            : m_size(0), m_capacity(2), m_team(new Character* [m_capacity]),
+            m_name("") {}
 
-        // Rule of 5: Copy constructor
-        Team(const Team& other) : name(other.name) {
-            for (auto member : other.members) {
-                members.push_back(member->clone());
+        Team(const char* name)
+            : m_size(0), m_capacity(2), m_team(new Character* [m_capacity]),
+            m_name(name) {}
+
+        Team(const Team& other) {
+            m_size = other.m_size;
+            m_capacity = other.m_capacity;
+            m_team = new Character * [m_capacity];
+            for (size_t i = 0; i < m_size; ++i) {
+                m_team[i] = other.m_team[i]->clone();
             }
+            m_name = other.m_name;
         }
 
-        // Rule of 5: Copy assignment operator
         Team& operator=(const Team& other) {
             if (this != &other) {
-                // Clean up existing members
-                for (auto member : members) {
-                    delete member;
+                for (size_t i = 0; i < m_size; ++i) {
+                    delete m_team[i];
                 }
-                members.clear();
+                delete[] m_team;
 
-                // Copy new members
-                name = other.name;
-                for (auto member : other.members) {
-                    members.push_back(member->clone());
+                m_size = other.m_size;
+                m_capacity = other.m_capacity;
+                m_team = new Character * [m_capacity];
+                for (size_t i = 0; i < m_size; ++i) {
+                    m_team[i] = other.m_team[i]->clone();
                 }
+                m_name = other.m_name;
             }
             return *this;
         }
 
-        // Rule of 5: Move constructor
-        Team(Team&& other) noexcept
-            : members(std::move(other.members)), name(std::move(other.name)) {
-            other.members.clear();
+        Team(Team&& other) noexcept {
+            m_size = other.m_size;
+            m_capacity = other.m_capacity;
+            m_team = other.m_team;
+            m_name = other.m_name;
+
+            other.m_size = 0;
+            other.m_capacity = 0;
+            other.m_team = nullptr;
+            other.m_name = "";
         }
 
-        // Rule of 5: Move assignment operator
         Team& operator=(Team&& other) noexcept {
             if (this != &other) {
-                // Clean up existing members
-                for (auto member : members) {
-                    delete member;
+                for (size_t i = 0; i < m_size; ++i) {
+                    delete m_team[i];
                 }
-                members = std::move(other.members);
-                name = std::move(other.name);
-                other.members.clear();
+                delete[] m_team;
+
+                m_size = other.m_size;
+                m_capacity = other.m_capacity;
+                m_team = other.m_team;
+                m_name = other.m_name;
+
+                other.m_size = 0;
+                other.m_capacity = 0;
+                other.m_team = nullptr;
+                other.m_name = "";
             }
             return *this;
         }
 
-        // Rule of 5: Destructor
         ~Team() {
-            for (auto member : members) {
-                delete member;
+            for (size_t i = 0; i < m_size; ++i) {
+                delete m_team[i];
             }
+            delete[] m_team;
         }
 
-        void addMember(const Character* c) {
-            // Check if a character with the same name already exists
-            for (auto member : members) {
-                if (member->getName() == c->getName()) return;
-            }
-            members.push_back(c->clone());
-        }
+        void addMember(const Character* c);
 
-        void removeMember(const std::string& c) {
-            auto it = std::remove_if(members.begin(), members.end(),
-                [&](Character* member) {
-                    if (member->getName() == c) {
-                        delete member;
-                        return true;
-                    }
-                    return false;
-                });
-            members.erase(it, members.end());
-        }
+        void removeMember(const std::string& c);
 
-        Character* operator[](size_t idx) const {
-            return (idx < members.size()) ? members[idx] : nullptr;
-        }
+        Character* operator[](size_t idx) const;
 
-        void showMembers() const {
-            std::cout << "[Team] " << name << std::endl;
-            for (size_t i = 0; i < members.size(); ++i) {
-                std::cout << "    " << (i + 1) << ": " << members[i]->getName() << std::endl;
-            }
-            if (members.empty()) std::cout << "No team." << std::endl;
-        }
+        void showMembers() const;
     };
 
 } // namespace seneca

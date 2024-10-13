@@ -2,111 +2,100 @@
 #define SENECA_GUILD_H
 
 #include "character.h"
-#include <vector>
-#include <iostream>
-#include <algorithm>
+#include <string>
 
 namespace seneca {
 
     class Guild {
-        std::vector<Character*> members;
-        std::string name;
+        size_t m_size;
+        size_t m_capacity;
+        Character** m_members;
+
+        std::string m_name;
+
+        int findMember(const std::string& c) const {
+            for (size_t i = 0; i < m_size; ++i) {
+                if (m_members[i]->getName() == c) {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
     public:
-        Guild(const char* name = "No guild") : name(name) {}
+        Guild()
+            : m_size(0), m_capacity(2), m_members(new Character* [m_capacity]),
+            m_name("") {}
 
-        // Rule of 5: Copy constructor
-        Guild(const Guild& other) : name(other.name) {
-            for (auto member : other.members) {
-                Character* clonedMember = member->clone();
-                clonedMember->setHealthMax(clonedMember->getHealthMax() + 300);
-                members.push_back(clonedMember);
+        Guild(const char* name)
+            : m_size(0), m_capacity(2), m_members(new Character* [m_capacity]),
+            m_name(name) {}
+
+        Guild(const Guild& other) {
+            m_size = other.m_size;
+            m_capacity = other.m_capacity;
+            m_members = new Character * [m_capacity];
+            for (size_t i = 0; i < m_size; ++i) {
+                m_members[i] = other.m_members[i];
             }
+            m_name = other.m_name;
         }
 
-        // Rule of 5: Copy assignment operator
         Guild& operator=(const Guild& other) {
             if (this != &other) {
-                // Clean up existing members
-                for (auto member : members) {
-                    delete member;
-                }
-                members.clear();
+                delete[] m_members;
 
-                // Copy new members
-                name = other.name;
-                for (auto member : other.members) {
-                    Character* clonedMember = member->clone();
-                    clonedMember->setHealthMax(clonedMember->getHealthMax() + 300);
-                    members.push_back(clonedMember);
+                m_size = other.m_size;
+                m_capacity = other.m_capacity;
+                m_members = new Character * [m_capacity];
+                for (size_t i = 0; i < m_size; ++i) {
+                    m_members[i] = other.m_members[i];
                 }
+                m_name = other.m_name;
             }
+
             return *this;
         }
 
-        // Rule of 5: Move constructor
-        Guild(Guild&& other) noexcept
-            : members(std::move(other.members)), name(std::move(other.name)) {
-            other.members.clear();
+        Guild(Guild&& other) noexcept {
+            m_size = other.m_size;
+            m_capacity = other.m_capacity;
+            m_members = other.m_members;
+            m_name = other.m_name;
+
+            other.m_size = 0;
+            other.m_capacity = 0;
+            other.m_members = nullptr;
+            other.m_name = "";
         }
 
-        // Rule of 5: Move assignment operator
         Guild& operator=(Guild&& other) noexcept {
             if (this != &other) {
-                // Clean up existing members
-                for (auto member : members) {
-                    delete member;
-                }
-                members = std::move(other.members);
-                name = std::move(other.name);
-                other.members.clear();
+                delete[] m_members;
+
+                m_size = other.m_size;
+                m_capacity = other.m_capacity;
+                m_members = other.m_members;
+                m_name = other.m_name;
+
+                other.m_size = 0;
+                other.m_capacity = 0;
+                other.m_members = nullptr;
+                other.m_name = "";
             }
             return *this;
         }
 
-        // Rule of 5: Destructor
-        ~Guild() {
-            for (auto member : members) {
-                delete member;
-            }
-        }
+        ~Guild() { delete[] m_members; }
 
-        void addMember(Character* c) {
-            // Check if the character is already in the guild
-            for (auto member : members) {
-                if (member->getName() == c->getName()) return;
-            }
-            Character* clonedMember = c->clone();
-            clonedMember->setHealthMax(clonedMember->getHealthMax() + 300);
-            members.push_back(clonedMember);
-        }
+        void addMember(Character* c);
 
-        void removeMember(const std::string& c) {
-            auto it = std::remove_if(members.begin(), members.end(),
-                [&](Character* member) {
-                    if (member->getName() == c) {
-                        member->setHealthMax(member->getHealthMax() - 300);
-                        delete member;
-                        return true;
-                    }
-                    return false;
-                });
-            members.erase(it, members.end());
-        }
+        void removeMember(const std::string& c);
 
-        Character* operator[](size_t idx) const {
-            return (idx < members.size()) ? members[idx] : nullptr;
-        }
+        Character* operator[](size_t idx) const;
 
-        void showMembers() const {
-            std::cout << "[Guild] " << name << std::endl;
-            for (size_t i = 0; i < members.size(); ++i) {
-                std::cout << "    " << (i + 1) << ": " << members[i]->getName() << std::endl;
-            }
-            if (members.empty()) std::cout << "No guild." << std::endl;
-        }
+        void showMembers() const;
     };
-
 } // namespace seneca
 
 #endif

@@ -50,6 +50,12 @@
     <ClCompile Include="tester_1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="guild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="team.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.md">
