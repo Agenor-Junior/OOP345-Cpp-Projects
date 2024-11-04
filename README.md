@@ -26,4 +26,4 @@ This subject expands the student's skill set in object-oriented programming and 
 - Locate, select, organize, and document information using appropriate technology and information systems.
 - Analyze, evaluate, and apply relevant information from a variety of sources.
 - Interact with others in groups or teams in ways that contribute to effective working relationships and the achievement of goals.
-- Manage the use of time and resources to complete projects.
+- Manage the use of time and resources to complete projects
