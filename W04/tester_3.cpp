@@ -188,4 +188,4 @@ static void loadFromFile(const char* filename, std::vector<T*>& theCollection)
 	}
 
 	file.close();
-}//
+}
