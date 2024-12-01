@@ -121,7 +121,8 @@ The `Utilities` class has the following structure:
 
 ## `Station` Module
 
-The `Station` module manages information about a station on the assembly line, which holds a specific item and fills customer orders.
+The `Station` module manages information about a station on the assembly line, which holds a specific
+item and fills customer orders.
 
 The `Station` class has the following structure:
 
@@ -213,9 +214,13 @@ The `Station` class has the following structure:
 
 ## `CustomerOrder` Module
 
-The `CustomerOrder` module contains all the functionality for processing customer orders as they move from `Station` to `Station` along the assembly line. The `Station` where a given order currently rests fills a request for one item of that station, if there is any such request. 
+The `CustomerOrder` module contains all the functionality for processing customer orders as they move from 
+`Station` to `Station` along the assembly line. The `Station` 
+where a given order currently rests fills a request for one item of that station,
+if there is any such request. 
 
-A `CustomerOrder` object manages a single order on the assembly line and contains the following information:
+A `CustomerOrder` object manages a single order on the assembly line and 
+contains the following information:
 
 The `CustomerOrder` class has the following structure:
 
@@ -247,7 +252,9 @@ struct Item
 ### Member Functions
 
 - default constructor
-- a custom 1-argument constructor that takes a reference to an unmodifiable string.  This constructor uses a local `Utilities` object to extract the tokens from the string and populate the current instance. 
+- a custom 1-argument constructor that takes a reference to an unmodifiable string.  
+- This constructor uses a local `Utilities` object to extract the tokens from the string and
+- populate the current instance. 
   The fields in the string are (separated by a delimiter):
   
     - Customer Name
@@ -260,11 +267,15 @@ struct Item
 - a move assignment operator. This operator should "promise" that it doesn't throw exceptions. Use the `noexcept` keyword in the declaration and the definition.
 - a destructor
 - `bool isOrderFilled() const` – returns `true` if all the items in the order have been filled; `false` otherwise
-- `bool isItemFilled(const std::string& itemName) const` – returns `true` if all items specified by `itemName` have been filled. If the item doesn't exist in the order, this query returns `true`.
-- `void fillItem(Station& station, std::ostream& os)` – this modifier fills **one** item in the current order that the `Station` specified in the first parameter handles.
+- `bool isItemFilled(const std::string& itemName) const` – returns `true` if all items specified by `itemName` have been filled.
+- If the item doesn't exist in the order, this query returns `true`.
+- `void fillItem(Station& station, std::ostream& os)` – this modifier fills **one** item in the current order that the
+- `Station` specified in the first parameter handles.
     
     - if the order doesn't contain the item handled, this function does nothing
-    - if the order contains items handled, and the `Station`'s inventory contains at least one item, this function fills the order with one single item. It subtracts 1 from the inventory and updates `Item::m_serialNumber` and `Item::m_isFilled`. It also prints the message `    Filled NAME, PRODUCT [ITEM_NAME]`.
+    - if the order contains items handled, and the `Station`'s inventory contains at least one item,
+    - this function fills the order with one single item. It subtracts 1 from the inventory and updates
+    - `Item::m_serialNumber` and `Item::m_isFilled`. It also prints the message `    Filled NAME, PRODUCT [ITEM_NAME]`.
     - if the order contains items handled but unfilled, and the inventory is empty, this function prints the message `    Unable to fill NAME, PRODUCT [ITEM_NAME]`.
     - all messages printed are terminated by an endline
 - `void display(std::ostream& os) const` – this query displays the state of the current object in the format (see the sample output for details)

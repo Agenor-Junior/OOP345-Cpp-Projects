@@ -8,15 +8,16 @@
 #include "CustomerOrder.h"
 
 namespace seneca {
-
-extern std::deque<seneca::CustomerOrder> g_pending;
-extern std::deque<seneca::CustomerOrder> g_completed;
-extern std::deque<seneca::CustomerOrder> g_incomplete;
+	extern std::deque<seneca::CustomerOrder> g_pending;
+	extern std::deque<seneca::CustomerOrder> g_completed;
+	extern std::deque<seneca::CustomerOrder> g_incomplete;
 
 	class Workstation : public Station {
 		std::deque<CustomerOrder> m_orders;
 		Workstation* m_pNextStation = nullptr;
+
 	public:
+
 		Workstation(const std::string& str) : Station(str) {}
 		Workstation& operator=(Workstation&&) = delete;
 		Workstation& operator+=(CustomerOrder&& newOrder);

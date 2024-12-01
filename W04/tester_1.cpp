@@ -9,10 +9,10 @@
 
 // Cheching if header guards exist and follow convention.
 #ifndef SENECA_STATION_H
-    #error "The header guard for 'Station.h' doesn't follow the convention!"
+   #error "The header guard for 'Station.h' doesn't follow the convention!"
 #endif
 #ifndef SENECA_UTILITIES_H
-    #error "The header guard for 'Utilities.h' doesn't follow the convention!"
+   #error "The header guard for 'Utilities.h' doesn't follow the convention!"
 #endif
 
 int cout = 0; // won't compile if headers don't follow convention regarding namespaces
