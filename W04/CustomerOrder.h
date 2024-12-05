@@ -69,6 +69,6 @@ namespace seneca {
 		void display(std::ostream& os) const;
 	};
 
-} // namespace seneca	
+} //namespace seneca	
 
 #endif // !SENECA_CUSTOMERORDER_H
