@@ -238,8 +238,6 @@ Base Destructor
 Derived Destructor
 Base Destructor
 ```
----
-
 ## Part D: Programming (40%)
 
 ### Translate the following description into appropriate C++ code.
