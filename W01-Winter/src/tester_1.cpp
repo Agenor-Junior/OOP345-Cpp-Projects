@@ -7,7 +7,7 @@
 #include "timeMonitor.h"
 #include "timeMonitor.h"     // intentional
 #include "logger.h"
-#include "logger.h"          // intentional
+#include "logger.h"          // intentional.
 
 // Cheching if header guards exist and follow convention.
 #ifndef SENECA_DICTIONARY_H
