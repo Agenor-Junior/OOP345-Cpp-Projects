@@ -12,6 +12,4 @@ class Order{
     void print();
     double updatePrice(double newPrice);
 
-
-
 };
