@@ -7,61 +7,61 @@ using namespace std;
 
 namespace seneca {
 
-    void Guild::addMember(Character* c) {
-        int index = findMember(c->getName());
-        if (index != -1) {
-            return;
-        }
+void Guild::addMember(Character *c) {
+  int index = findMember(c->getName());
+  if (index != -1) {
+    return;
+  }
 
-        if (m_size == m_capacity) {
-            m_capacity *= 2;
-            Character** temp = new Character * [m_capacity];
-            for (size_t i = 0; i < m_size; ++i) {
-                temp[i] = m_members[i];
-            }
-            delete[] m_members;
-            m_members = temp;
-        }
-
-        c->setHealthMax(c->getHealthMax() + 300);
-        c->setHealth(c->getHealthMax());
-
-        m_members[m_size++] = c;
+  if (m_size == m_capacity) {
+    m_capacity *= 2;
+    Character **temp = new Character *[m_capacity];
+    for (size_t i = 0; i < m_size; ++i) {
+      temp[i] = m_members[i];
     }
+    delete[] m_members;
+    m_members = temp;
+  }
 
-    void Guild::removeMember(const std::string& c) {
-        int index = findMember(c);
-        if (index == -1) {
-            return;
-        }
+  c->setHealthMax(c->getHealthMax() + 300);
+  c->setHealth(c->getHealthMax());
 
-        m_members[index]->setHealthMax(m_members[index]->getHealthMax() - 300);
-        m_members[index]->setHealth(m_members[index]->getHealthMax());
+  m_members[m_size++] = c;
+}
 
-        for (size_t i = index; i < m_size - 1; ++i) {
-            m_members[i] = m_members[i + 1];
-        }
-        m_size--;
-    }
+void Guild::removeMember(const std::string &c) {
+  int index = findMember(c);
+  if (index == -1) {
+    return;
+  }
 
-    Character* Guild::operator[](size_t idx) const {
-        if (idx >= m_size) {
-            return nullptr;
-        }
+  m_members[index]->setHealthMax(m_members[index]->getHealthMax() - 300);
+  m_members[index]->setHealth(m_members[index]->getHealthMax());
 
-        return m_members[idx];
-    }
+  for (size_t i = index; i < m_size - 1; ++i) {
+    m_members[i] = m_members[i + 1];
+  }
+  m_size--;
+}
 
-    void Guild::showMembers() const {
-        if (m_capacity == 0) {
-            cout << "No guild." << m_name << "\n";
-            return;
-        }
+Character *Guild::operator[](size_t idx) const {
+  if (idx >= m_size) {
+    return nullptr;
+  }
 
-        cout << "[Guild] " << m_name << "\n";
-        for (size_t i = 0; i < m_size; ++i) {
-            cout << "    " << i + 1 << ": " << *m_members[i] << "\n";
-        }
-    }
+  return m_members[idx];
+}
+
+void Guild::showMembers() const {
+  if (m_capacity == 0) {
+    cout << "No guild." << m_name << "\n";
+    return;
+  }
+
+  cout << "[Guild] " << m_name << "\n";
+  for (size_t i = 0; i < m_size; ++i) {
+    cout << "    " << i + 1 << ": " << *m_members[i] << "\n";
+  }
+}
 
 } // namespace seneca

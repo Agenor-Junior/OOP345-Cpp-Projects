@@ -1,16 +1,22 @@
-#include "order.h"
+// Shadowed Scope
+// shadowed_scope.cpp
+
 #include <iostream>
 
-
-int main(int argc, char** argv)
-{   
-    std::cout <<"Arguments is:"<<std::endl;
-
-    for(int i=0; i< argc;i++){
-        std::cout << argv[i]<<std::endl;
+int main()
+{
+    int i;
+    std::cout << "Enter i: ";
+    std::cin >> i;
+    if (i < 0)
+    {
+       int i = 4;  // shadows the outer i
+        std::cout << i << std::endl;
     }
-
-
-
-    return 0;
+    else
+    {
+        int i = -4; // shadows the outer i
+        std::cout << i << std::endl;
+    }
+    std::cout << i << std::endl;
 }
